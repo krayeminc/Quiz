@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -9,19 +15,46 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
-                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                        <viewControllerLayoutGuide type="top" id="DQh-y4-fyM"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ub4-W9-I4C"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2016-06-16 at 13.51.59.png" translatesAutoresizingMaskIntoConstraints="NO" id="CNd-HI-L5a">
+                                <rect key="frame" x="-288" y="0.0" width="1137" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Krayem_Inc_Logo_FInal_v1.png" translatesAutoresizingMaskIntoConstraints="NO" id="6GA-XC-caU">
+                                <rect key="frame" x="16" y="275.5" width="560" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="75T-U4-OzJ"/>
+                                    <constraint firstAttribute="width" constant="560" id="KKH-Un-2QT"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="116" id="bpq-ju-ULl"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="145" id="iZ8-Dh-7cc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CNd-HI-L5a" firstAttribute="centerX" secondItem="6GA-XC-caU" secondAttribute="centerX" constant="-15.5" id="BTm-eB-QRs"/>
+                            <constraint firstItem="CNd-HI-L5a" firstAttribute="bottom" secondItem="Ub4-W9-I4C" secondAttribute="top" id="Ndm-Sg-T5m"/>
+                            <constraint firstItem="6GA-XC-caU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UUM-g9-ovt"/>
+                            <constraint firstItem="6GA-XC-caU" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="VOg-cN-zCv"/>
+                            <constraint firstItem="CNd-HI-L5a" firstAttribute="centerY" secondItem="6GA-XC-caU" secondAttribute="centerY" id="YB1-xY-Wy1"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="6GA-XC-caU" secondAttribute="leading" id="x6m-Xt-xLu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6GA-XC-caU" secondAttribute="trailing" id="xRd-PM-MQf"/>
+                            <constraint firstItem="CNd-HI-L5a" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-288" id="zRx-X1-rCE"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Krayem_Inc_Logo_FInal_v1.png" width="1419" height="404"/>
+        <image name="Screen Shot 2016-06-16 at 13.51.59.png" width="1034" height="518"/>
+    </resources>
 </document>
